@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Þingvellir</title>
+    <link rel="icon" href="images/tab-icon.png">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="brand">Waterfront Cottage at Lake Thingvellir</div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="en-index.html">Home</a>
+                </div>
+
+                <div class="space-filler"> </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="en-about.html">Contact/About us</a>
+                </div>
+
+                <div class="space-filler"> </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="en-photos.html">Photo Album</a>
+                </div>
+
+                <div class="space-filler"> </div>
+
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="en-area.html">Location</a>
+                </div>
+
+                <div class="nav-lang-wrapper">
+                    <a href="is-area.html"> <img src="images/is-icon.png" alt=""> </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="content-wrapper">
+
+            <div class="area-row">
+                <div class="area-column">
+                    <div class="area-wrapper">
+                        <div class="area-text">
+                            <div class="area-text-header">
+                                Bláskógabyggð, Iceland
+                            </div>
+                            
+                            <h4>The cottage is located at Lake Þingvellir.</h4>
+                            
+                            <p>The cottage is very well located for various sightseeing and day tours, e.g.</p> 
+                            <p>- 10 km from Þingvellir National Park</p>
+                            <p>- 17 km Nesjavellir (geothermal power station)</p>
+                            <p>- 44 km Kerið (volcanic crater lake)</p>
+                            <p>- 65 km Geysir, hot spring / geothermal area</p>
+                            <p>- 72 km Gullfoss, (waterfall)</p>
+                            <p>- 85 km Reykholt, Borgarfjörður (partly gravel road) (historical site, Deildartunguhver (hot spring))</p>
+                            <p>- many hiking trails in the neighborhood. Handbook with trails around Þingvellir is available in the cottage (in Icelandic)</p>
+                        </div>
+                    </div>
+
+                    <div class="loca-map-wrapper">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13876.695363081113!2d-21.194641099083483!3d64.23039917029428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjTCsDEzJzQzLjAiTiAyMcKwMTEnMTUuOCJX!5e0!3m2!1sen!2sis!4v1605705709074!5m2!1sen!2sis" width="772" height="472" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="area-column">
+                    <div class="area-image-wrapper">
+                        <div class="area-image" style="background-image: url(images/thingvellirpark.jpg);"></div>
+                    </div>
+
+                    <div class="loca-wrapper">
+                        <div class="loca-text">
+                            <div class="loca-text-header">
+                                Getting around
+                            </div>
+
+                            <p>- 45 km from Reykjavik City center</p>
+                            <p>- 90 km from Keflavik Intl Airport</p>
+                            <p>- 30 km Mosfellsbær (shops, restaurants, swimming pool)</p>
+                            <p>- 34 km Laugarvatn (grocery store, bath/pool)</p>
+                            <p>- 55 km from Selfoss (shops, restaurants, swimming pool)</p>
+                            <br>
+                            <p>We recommend that our guests have transport of their own. There is no public transport in this area.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+</body>
+
+<script>
+    //Initialize and add map
+    function initMap() {
+        //location
+        const uluru = { lat: -25.344, lng: 131.036};
+        //map centered at location
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+        });
+        //marker at location
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+        });
+    }
+</script>
+
+</html>
+
