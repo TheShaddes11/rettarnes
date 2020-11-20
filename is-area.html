@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Þingvellir</title>
+    <link rel="icon" href="images/tab-icon.png">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="brand">Sumarbústaður við vatnsbakkann</div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="is-index.html">Heim</a>
+                </div>
+
+                <div class="space-filler"> </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="is-about.html">Hafa samband/Um okkur</a>
+                </div>
+
+                <div class="space-filler"> </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="is-photos.html">Myndasafn</a>
+                </div>
+
+                <div class="space-filler"> </div>
+
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="is-area.html">Staðsetning</a>
+                </div>
+
+                <div class="nav-lang-wrapper">
+                    <a href="en-area.html"> <img src="images/en-icon.png" alt=""> </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="content-wrapper">
+
+            <div class="area-row">
+                <div class="area-column">
+                    <div class="area-wrapper">
+                        <div class="area-text">
+                            <div class="area-text-header">
+                                Bláskógabyggð, Ísland
+                            </div>
+                            
+                            <h4>Sumarbústaðurinn er staðsettur við Þingvallavatn</h4>
+                            
+                            <p>Sumarbústaðurinn er mjög vel staðsettur fyrir ýmsar skoðunarferðir og dagsferðir, t.d.</p> 
+                            <p>- 10 km frá Þjóðgarðinum á Þingvöllum</p>
+                            <p>- 17 km Nesjavellir (jarðvarmavirkjun)</p>
+                            <p>- 44 km Kerið (vatns-gígur)</p>
+                            <p>- 65 km Geysir, hver / jarðhitasvæði</p>
+                            <p>- 72 km Gullfoss</p>
+                            <p>- 85 km Reykholt, Borgarfjörður (malarvegur að hluta) (sögulegur staður, Deildartunguhver)</p>
+                            <p>- margar gönguleiðir í hverfinu. Handbók með gönguleiðum um Þingvelli er aðgengileg í bústaðnum (á íslensku)</p>
+                        </div>
+                    </div>
+
+                    <div class="loca-map-wrapper">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13876.695363081113!2d-21.194641099083483!3d64.23039917029428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjTCsDEzJzQzLjAiTiAyMcKwMTEnMTUuOCJX!5e0!3m2!1sen!2sis!4v1605705709074!5m2!1sen!2sis" width="772" height="472" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="area-column">
+                    <div class="area-image-wrapper">
+                        <div class="area-image" style="background-image: url(images/thingvellirpark.jpg);"></div>
+                    </div>
+
+                    <div class="loca-wrapper">
+                        <div class="loca-text">
+                            <div class="loca-text-header">
+                                Að komast um
+                            </div>
+
+                            <p>- 45 km frá miðbæ Reykjavíkur</p>
+                            <p>- 90 km frá Keflavíkurflugvelli</p>
+                            <p>- 30 km Mosfellsbær (verslanir, veitingastaðir, sundlaug)</p>
+                            <p>- 34 km Laugarvatn (matvöruverlsun, bað / sundlaug)</p>
+                            <p>- 55 km frá Selfoss (verslanir, veitingastaðir, sundlaug)</p>
+                            <br>
+                            <p>Við mælum með að gestir komi á eigin faratæki. Engar almenningssamgöngur eru á þessu svæði.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+</body>
+
+<script>
+    //Initialize and add map
+    function initMap() {
+        //location
+        const uluru = { lat: -25.344, lng: 131.036};
+        //map centered at location
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+        });
+        //marker at location
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+        });
+    }
+</script>
+
+</html>
+
